@@ -7,7 +7,7 @@ sudo sysctl -w vm.dirty_expire_centisecs=100
 sleep 2
 
 # Connects to either wifi or hotspot.
-/home/fox282/sync_time.sh &
+~/sync_time.sh &
 
 # Makes sure the pi is connected to a network so it is able to record with the right timestamp.
 while [ -z "$(hostname -I)" ]; do

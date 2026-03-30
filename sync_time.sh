@@ -2,10 +2,9 @@
 
 sudo nmcli radio wifi on
 
-while [ -z "$(hostname -I)" ]; do
-  sleep 1
-done
+sudo nmcli --wait 10 device wifi connect "Your_SSID" password "Your_Password"
 
-sudo systemctl restart systemd-timesyncd
-
-sleep 2
+if [ -n "$(hostname -I)" ]; then
+  sudo systemctl restart systemd-timesyncd
+  sleep 2
+fi

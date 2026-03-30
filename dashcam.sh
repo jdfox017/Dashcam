@@ -9,11 +9,6 @@ sleep 2
 # Connects to either wifi or hotspot.
 ~/sync_time.sh &
 
-# Makes sure the pi is connected to a network so it is able to record with the right timestamp.
-while [ -z "$(hostname -I)" ]; do
-  sleep 1
-done
-
 # Scans and repairs filesystem errors caused by sudden power cuts from the car turning off.
 sudo fsck.exfat -a /dev/mmcblk0p3
 sleep 5

@@ -17,6 +17,9 @@ sleep 5
 DASHCAM_DIR="/mnt/dashcam_share"
 MAX_USAGE=75
 
+# Deletes folders older than 7 days.
+find /mnt/dashcam_share/* -type d -mtime +7 -exec rm -rf {} + 
+
 echo "Dashcam starting"
 
 

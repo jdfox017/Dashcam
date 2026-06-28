@@ -1,10 +1,10 @@
-Raspberry Pi Zero 2 W Dashcam
+# Raspberry Pi Zero 2 W Dashcam
 
 This project is a custom 3D printed heat resistant Raspberry Pi Zero dashcam system
 designed to start recording when the car turns on and end the video when the car turns off.
 This is my first embedded systems project I have done on my own, so I am sure there is room for improvement.
 
---------------------------------------------------------------------------------------------------
+---
 
 **Code Setup**
 
@@ -17,10 +17,9 @@ Permissions: Run chmod +x ∼/*.sh in the terminal to make the scripts executabl
 Automation: Add the line provided in the crontab file to your system crontab (crontab -e) 
             so the camera starts recording automatically on boot.
 
---------------------------------------------------------------------------------------------------
+---
 
 **Hardware & 3D Printing**
-
 
 Filament: ASA was used to prevent melting in the hot car interior.
 
@@ -29,7 +28,7 @@ Make sure to drill a hole in the top that is slightly smaller than the screw
 you intend to use to mount, and then hand screw in the intended screw.
 A dashcam rearview mirror mounting kit was bought on amazon.
 
---------------------------------------------------------------------------------------------------
+---
 
 **Troubleshooting**
 
@@ -49,3 +48,8 @@ In the shell scripts is where all of the logic resides, and the crontab is where
 One of my first issues was the fact that when the dashcam was in my car it did not have a network connection
 so the timestamps were incorrect. This was solved by making the pi connect to known networks
 like my hotspot or home wifi before starting the recording.
+
+---
+
+This repository contains a school project shared for educational and portfolio purposes.  
+Please do not copy, redistribute, or reuse this work without permission.

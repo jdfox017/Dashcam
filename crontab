@@ -1,1 +1,1 @@
-@reboot sleep 10 && /bin/bash $HOME/dashcam.sh > $HOME/dashcam.log 2>&1
+@reboot sleep 10 && /bin/bash "$HOME/dashcam.sh" > "$HOME/dashcam.log" 2>&1
